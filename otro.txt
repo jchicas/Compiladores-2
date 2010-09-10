@@ -1,0 +1,19 @@
+class otro{
+
+	int a;
+	boolean b;
+	
+
+	void main(){
+		char a;
+		char g;
+	
+		
+		g = (char) b;
+		char j;
+		if(b){
+			int a;
+		}	
+	}
+}
+

@@ -1,0 +1,10 @@
+decaf.Binary
+decaf.T
+decaf.Void
+decaf.Var
+decaf.Func
+decaf.Err
+decaf.Struct
+decaf.Letter
+decaf.Number
+decaf.Group

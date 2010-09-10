@@ -1,0 +1,103 @@
+"Name"     = 'Decaf'
+"Author"   = 'Pablo Rubio'
+"Version"  = '2.4'
+"About"    = 'Like Java, but without much caffeine.'
+
+"Start Symbol" = <Program>
+
+! ------------------------------------------------- Terminales
+
+Identifier  = {Letter} {Alphanumeric}*
+Character   = '' {Printable} ''
+ScapeSeq    = '' '\' {Letter} ''
+Number      = {Digit}+
+
+! ------------------------------------------------- Producciones
+
+<Program>               ::= 'class' Identifier '{' <Declaration_k> '}'
+<Declaration_k>         ::= <VarDeclaration> <Declaration_k>
+                        | <MethodDeclaration> <Declaration_k>
+                        | <StructDeclaration> ';' <Declaration_k>
+                        |
+<StructDeclaration>     ::= 'struct' Identifier '{' <VarDeclaration_k> '}'
+<VarDeclaration>        ::= 'int' Identifier ';'
+                        | 'char' Identifier ';'
+                        | 'boolean' Identifier ';'
+                        | 'void' Identifier ';'
+                        | 'struct' Identifier Identifier ';'
+                        | <StructDeclaration> Identifier ';'
+                        | 'int' Identifier '[' Number ']' ';'
+                        | 'char' Identifier '[' Number ']' ';'
+                        | 'boolean' Identifier '[' Number ']' ';'
+                        | 'void' Identifier '[' Number ']' ';'
+                        | 'struct' Identifier Identifier '[' Number ']' ';'
+                        | <StructDeclaration> Identifier '[' Number ']' ';'
+<VarDeclaration_k>      ::= <VarDeclaration> <VarDeclaration_k>
+                        | 
+<MethodDeclaration>     ::= <MethodFirm> <Block>
+<MethodFirm>            ::= 'int' Identifier '(' <FormalParameters> ')'
+                        | 'char' Identifier '(' <FormalParameters> ')'
+                        | 'boolean' Identifier '(' <FormalParameters> ')'
+                        | 'void' Identifier '(' <FormalParameters> ')'
+                        | 'int' Identifier '(' ')'
+                        | 'char' Identifier '(' ')'
+                        | 'boolean' Identifier '(' ')'
+                        | 'void' Identifier '(' ')'
+<FormalParameters>      ::= <FormalParameters> ',' <Parameter>
+                        | <Parameter>
+<Parameter>             ::= 'int' Identifier
+                        | 'char' Identifier
+                        | 'boolean' Identifier
+                        | 'void' Identifier
+                        | 'int' Identifier '[' Number ']'
+                        | 'char' Identifier '[' Number ']'
+                        | 'boolean' Identifier '[' Number ']'
+                        | 'void' Identifier '[' Number ']'
+<Block>                 ::= '{' <BlockDefinition_k> '}'
+<BlockDefinition_k>     ::= <VarDeclaration> <BlockDefinition_k>
+                        | <Statement> <BlockDefinition_k>
+                        | 
+<Statement>             ::= 'if' '(' <Expression> ')' <Block> 'else' <Block>
+                        | 'if' '(' <Expression> ')' <Block>
+                        | 'while' '(' <Expression> ')' <Block>
+                        | 'return' <Expression> ';'
+                        | 'return' ';'
+                        | <Location> '=' <Expression> ';'
+                        | <Expression> ';'
+<Location>              ::= Identifier
+                        | Identifier '[' <Expression> ']'
+                        | Identifier '.' <Location>
+                        | Identifier '[' <Expression> ']' '.' <Location>
+<Expression>            ::= <Expression> '&&' <AddExpression> 
+                        | <Expression> '||' <AddExpression> 
+                        | <Expression> '>'  <AddExpression> 
+                        | <Expression> '<'  <AddExpression> 
+                        | <Expression> '<=' <AddExpression>
+                        | <Expression> '>=' <AddExpression>
+                        | <Expression> '==' <AddExpression>
+                        | <Expression> '!=' <AddExpression>
+                        | <AddExpression>
+<AddExpression>         ::= <AddExpression> '+' <MultExpression>
+                        | <AddExpression> '-' <MultExpression>
+                        | <MultExpression>
+<MultExpression>        ::= <MultExpression> '*' <NegateExpression> 
+                        | <MultExpression> '/' <NegateExpression> 
+                        | <MultExpression> '%' <NegateExpression> 
+                        | <NegateExpression> 
+<NegateExpression>      ::= '-' <Value>
+                        | '!' <Value>
+                        | <Value>
+<Value>                 ::= <Location>
+                        | '(' <Expression> ')'
+                        | '(' 'int' ')' <Value>
+                        | '(' 'char' ')' <Value>
+                        | '(' 'boolean' ')' <Value>
+                        | Identifier '(' <ActualParameters> ')'
+                        | Identifier '(' ')'
+                        | Number
+                        | Character
+                        | ScapeSeq
+                        | 'true'
+                        | 'false'
+<ActualParameters>      ::= <ActualParameters> ',' <Expression>
+                        | <Expression>

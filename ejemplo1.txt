@@ -1,0 +1,22 @@
+class prog{
+	int a;
+	boolean b;
+
+	int c(int k,char l){
+		return 0;		
+	}
+
+	void main(){
+		char a;
+		char g;
+	
+		a = (char) c((int)a, g);
+		g = (char) b;
+		char j;
+		if(b){
+			int a;
+		}	
+	}
+}
+
+

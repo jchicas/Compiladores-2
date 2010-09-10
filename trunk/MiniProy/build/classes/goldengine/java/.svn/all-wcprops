@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java
+END
+LRAction.class
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/LRAction.class
+END
+FAEdge.class
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/FAEdge.class
+END
+ParserException.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/ParserException.class
+END
+SimpleDatabase.class
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/SimpleDatabase.class
+END
+Token.class
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/Token.class
+END
+VariableList.class
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/VariableList.class
+END
+LRActionTable.class
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/LRActionTable.class
+END
+VariableType.class
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/VariableType.class
+END
+FAState.class
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/FAState.class
+END
+RecordIDConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/RecordIDConstants.class
+END
+EntryContentConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/EntryContentConstants.class
+END
+Reduction.class
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/Reduction.class
+END
+SymbolList.class
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/SymbolList.class
+END
+GOLDParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/GOLDParser.class
+END
+LookAheadStream.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/LookAheadStream.class
+END
+SymbolTypeConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/SymbolTypeConstants.class
+END
+Symbol.class
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/Symbol.class
+END
+ParseResultConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/ParseResultConstants.class
+END
+Rule.class
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/Rule.class
+END
+GPMessageConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/GPMessageConstants.class
+END
+ActionConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4/trunk/MiniProy/build/classes/goldengine/java/ActionConstants.class
+END

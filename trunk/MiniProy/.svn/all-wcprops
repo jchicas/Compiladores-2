@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/4/trunk/MiniProy
+END
+.hgignore
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/4/trunk/MiniProy/.hgignore
+END
+DecafGrammar.cgt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/4/trunk/MiniProy/DecafGrammar.cgt
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/4/trunk/MiniProy/manifest.mf
+END
+prueba1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/4/trunk/MiniProy/prueba1.txt
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/4/trunk/MiniProy/build.xml
+END
+prueba2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/4/trunk/MiniProy/prueba2.txt
+END

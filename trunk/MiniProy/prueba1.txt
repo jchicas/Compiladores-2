@@ -1,0 +1,23 @@
+class Cangrejo
+{
+
+	int a; p
+	int b;
+	int c;
+	
+	void main()
+	{
+		
+		a = 4;
+		b = 1;
+		
+		while(a > 0)
+		{
+			b = b * a;
+			a = a - 1;
+		}
+		
+		c = b;
+	}
+}
+

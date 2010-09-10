@@ -1,0 +1,30 @@
+class cosa{
+
+    struct coso{
+        char b;
+        boolean t;
+    } animal[8];
+    int a;
+    int b;
+    int h;
+    char d[9];
+
+    int coso(char hola, int gatos){
+        boolean jo;
+        int ret;
+        struct coso ppp;
+
+        h.b = animal[3].b;
+        jo = (boolean) h.b;
+        ret = 0;
+        while(jo){
+            ret = ret + (int) jo;
+            hola = (char) ((int)hola - 1);
+            if((int) hola < 0){
+                h = h;
+            }
+        }
+        return ret;
+    }
+}
+

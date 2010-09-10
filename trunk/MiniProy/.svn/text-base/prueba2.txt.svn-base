@@ -1,0 +1,68 @@
+class Primitives
+{
+	int i;
+	
+	int zero(int f)
+	{
+		return 0;
+	}
+	
+	int succesor(int g)
+	{
+		return g + 1;
+	}
+	
+	int fibonacci(int n)
+	{
+		if(n <= 1)
+		{
+			return n;
+		}
+		else
+		{
+			return fibonacci(n - 1) + fibonacci(n - 2);
+		}
+	}
+	
+	int factorial(int i)
+	{
+		if(i < 2)
+		{
+			return 1;
+		}
+		else
+		{
+			return i * factorial(i - 1);
+		}
+	}
+	
+	int ackermann(int m, int n)
+    {
+        if(m == 0)
+        {
+            return n + 1;
+        }
+       
+        if((m > 0) && (n == 0))
+        {
+            return ackermann(m - 1, 1);
+        }
+       
+        if((m > 0) && (n > 0))
+        {
+            return ackermann(m - 1, ackermann(m, n - 1));
+        }
+    }
+
+    void main()
+    {
+        int i;
+        int g;
+        int n;
+       
+        g = 2;
+       
+        i = ackermann(g * factorial(3), succesor(g) + 2/ (g*3));
+        i = fibonacci(i - succesor(i) * (- ackermann(9, n - 9)));
+    }
+}
